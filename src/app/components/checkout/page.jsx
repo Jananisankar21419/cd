@@ -5,8 +5,8 @@ export default function Checkout() {
   const router = useRouter();
 
   const handleCheckoutComplete = () => {
-    // Logic to process payment and confirm checkout
-    router.push("/order-confirmation"); // Redirect to the order confirmation page
+   
+    router.push("/order-confirmation"); /
   };
 
   return (
@@ -14,7 +14,7 @@ export default function Checkout() {
       <h1 className="text-2xl font-bold text-center text-[#A54A69]">
         Checkout
       </h1>
-      {/* Include your checkout form logic */}
+    
 
       <button
         onClick={handleCheckoutComplete}
