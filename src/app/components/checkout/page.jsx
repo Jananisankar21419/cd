@@ -6,7 +6,7 @@ export default function Checkout() {
 
   const handleCheckoutComplete = () => {
    
-    router.push("/order-confirmation"); /
+    router.push("/order-confirmation"); 
   };
 
   return (
