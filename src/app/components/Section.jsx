@@ -45,6 +45,7 @@ export default function Section() {
             fill
             alt="Delicious cake with grapes"
             style={{ objectFit: "cover" }}
+             className="object-cover sm:object-contain"
             loading="lazy"
           />
         </motion.div>
