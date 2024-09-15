@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  background-color: #f5eded;
+}
+
+.carousel-container {
+  @apply relative w-full max-w-[1200px] mx-auto;
+}
+
+.carousel-wrapper {
+  @apply overflow-hidden;
+}
+
+.carousel-content {
+  @apply flex transition-transform duration-500 ease-in-out;
+}
+
+.carousel-content > div {
+  @apply flex-shrink-0 w-[300px];
+}
